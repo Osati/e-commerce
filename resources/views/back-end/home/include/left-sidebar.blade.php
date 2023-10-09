@@ -34,8 +34,8 @@
                     </li>
                     <li><a><i class="fa fa-windows"></i> Blog <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
-                            <li><a href="page_403.html">Add BLog</a></li>
-                            <li><a href="page_404.html">Manage BLog</a></li>
+                            <li><a href="{{ route('blogs.create') }}">Add BLog</a></li>
+                            <li><a href="{{ route('blogs.index') }}">Manage BLog</a></li>
 
                         </ul>
                     </li>

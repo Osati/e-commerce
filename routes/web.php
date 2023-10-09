@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\BlogController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,4 +29,5 @@ Route::middleware([
 
     Route::get('/dashboard',[DashboardController::class,'dashboard'])->name('dashboard');
     Route::resources(['categories'=>CategoryController::class]);
+    Route::resources(['blogs'=>BlogController::class]);
 });
