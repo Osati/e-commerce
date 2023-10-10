@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\FeaturedController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +19,7 @@ use App\Http\Controllers\BlogController;
 */
 
 Route::get('/',[HomeController::class,'index'])->name('home');
+Route::get('/featured',[FeaturedController::class,'featured'])->name('featured');
 
 
 
