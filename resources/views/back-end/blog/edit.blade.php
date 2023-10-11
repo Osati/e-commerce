@@ -1,4 +1,7 @@
 @extends('back-end.master')
+@section('title')
+    blogs-edit
+@endsection
 
 @section('content')
     <div class="container-fluid">
@@ -21,6 +24,8 @@
                 <input type="text"  class="form-control" name="author_name" value="{{ $blog->author_name }}" required>
                 <label for="fullname">Description :</label>
                 <textarea type="text"  class="form-control" name="description" required>{{ $blog->description }}</textarea>
+                <label for="fullname">MRP :</label>
+                <input type="text"  class="form-control" name="product_mrp" value="{{ $blog->product_mrp }}" required>
                 <label for="fullname">Image :</label>
                 <input type="file"  class="form-control" name="image" value="{{ $blog->image }}" accept="image/*">
                 <img src="{{ asset($blog->image) }}" style="width: 50px">

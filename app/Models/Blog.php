@@ -21,6 +21,7 @@ class Blog extends Model
      self::$blog->category_id = $request->category_id;
      self::$blog->author_name = $request->author_name;
      self::$blog->description = $request->description;
+     self::$blog->product_mrp = $request->product_mrp;
      if($request->file('image')){
          if(self::$blog->image){
              if(file_exists(self::$blog->image)){

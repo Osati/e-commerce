@@ -21,6 +21,9 @@
                 <textarea type="text"  class="form-control" name="description" required></textarea>
                 <label for="fullname">Image :</label>
                 <input type="file"  class="form-control" name="image" accept="image/*" required />
+                <label for="fullname">MRP :</label>
+                <input type="text"  class="form-control" name="product_mrp" required />
+
                 <button type="submit" name="submit" class="form-control mt-1">Save Info</button>
             </form>
         </div>

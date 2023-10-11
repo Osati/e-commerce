@@ -1,4 +1,7 @@
 @extends('front-end.master')
+@section('title')
+    feature-cars
+@endsection
 
 @section('hero')
     <div class="container">
@@ -39,7 +42,7 @@
                             </div>
                             <div class="featured-cars-txt">
                                 <h2> {{ $blog->category->category_name }}<a href="#"></a></h2>
-                                <h3>$89,395</h3>
+                                <h3>${{ $blog->product_mrp }}</h3>
                                 <p>
                                     Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.
                                 </p>

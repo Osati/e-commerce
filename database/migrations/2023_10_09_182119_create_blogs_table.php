@@ -17,6 +17,7 @@ return new class extends Migration
             $table->integer('category_id');
             $table->string('author_name');
             $table->text('description');
+            $table->integer('product_mrp');
             $table->text('image');
             $table->tinyInteger('status')->default(1);
             $table->timestamps();

@@ -33,7 +33,7 @@
                                     <td>{{ $blog->title }}</td>
                                     <td>{{ $blog->category->category_name }}</td>
                                     <td>{{ $blog->author_name }}</td>
-                                    <td>{{ $blog->description }}</td>
+                                    <td>{{ $blog->product_mrp }}</td>
                                     <td>
                                         <img src="{{ $blog->image }}" style="width: 50px">
                                     </td>

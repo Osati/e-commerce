@@ -1,4 +1,7 @@
 @extends('front-end.master')
+@section('title')
+    CarVilla
+@endsection
 
 @section('hero')
     <div class="container">
