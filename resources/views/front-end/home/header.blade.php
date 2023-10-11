@@ -18,11 +18,11 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
                     <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li class=" scroll active"><a href="#home">home</a></li>
-                        <li class="scroll"><a href="#service">service</a></li>
+                        <li class=" scroll active"><a href="{{route('home')}}">home</a></li>
+                        <li class="scroll"><a href="{{route('services')}}">service</a></li>
                         <li class="scroll"><a href="{{ route('featured') }}">featured cars</a></li>
-                        <li class="scroll"><a href="#new-cars">new cars</a></li>
-                        <li class="scroll"><a href="#brand">brands</a></li>
+                        <li class="scroll"><a href="{{route('new-cars')}}">new cars</a></li>
+                        <li class="scroll"><a href="{{route('brands')}}">brands</a></li>
                         <li class="scroll"><a href="#contact">contact</a></li>
                     </ul><!--/.nav -->
                 </div><!-- /.navbar-collapse -->

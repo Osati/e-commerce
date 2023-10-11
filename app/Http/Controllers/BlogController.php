@@ -25,7 +25,7 @@ class BlogController extends Controller
     public function create()
     {
         return view('back-end.blog.create',[
-            'categories'=>Category::all()
+            'categories'=>Category::where('status',1)->get()
         ]);
     }
 

@@ -18,7 +18,7 @@
                                 <th>Title</th>
                                 <th>Category</th>
                                 <th>Author Name</th>
-                                <th>Description</th>
+                                <th>Market Price</th>
                                 <th>Image</th>
                                 <th>Status</th>
                                 <th>Action</th>
@@ -33,7 +33,7 @@
                                     <td>{{ $blog->title }}</td>
                                     <td>{{ $blog->category->category_name }}</td>
                                     <td>{{ $blog->author_name }}</td>
-                                    <td>{{ $blog->product_mrp }}</td>
+                                    <td>${{ $blog->product_mrp }}/-</td>
                                     <td>
                                         <img src="{{ $blog->image }}" style="width: 50px">
                                     </td>
