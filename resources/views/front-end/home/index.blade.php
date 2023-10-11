@@ -205,7 +205,7 @@
                         </div><!--/.new-cars-txt-->
                     </div><!--/.col-->
                 </div><!--/.row-->
-            </div><!--/.new-cars-item-->
+            </div><!--/.new-cars-content-->
         </div><!--/.container-->
 
     </section><!--/.new-cars-->
@@ -236,8 +236,9 @@
                                 <div class="featured-cars-txt">
                                     <h2> {{ $blog->category->category_name }}<a href="#"></a></h2>
                                     <h3>${{ $blog->product_mrp }}</h3>
-
-                                    <p>{{ $blog->description }}</p>
+                                    <p>
+                                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -248,7 +249,6 @@
 
     </section><!--/.featured-cars-->
     <!--featured-cars end -->
-
 
     <!-- clients-say strat -->
     <section id="clients-say"  class="clients-say">
@@ -263,7 +263,7 @@
                             <div class="testimonial-description">
                                 <div class="testimonial-info">
                                     <div class="testimonial-img">
-                                        <img src="{{asset('front-end-assets') }}/images/clients/c1.png" alt="image of clients person" />
+                                        <img src="assets/images/clients/c1.png" alt="image of clients person" />
                                     </div><!--/.testimonial-img-->
                                 </div><!--/.testimonial-info-->
                                 <div class="testimonial-comment">
@@ -283,7 +283,7 @@
                             <div class="testimonial-description">
                                 <div class="testimonial-info">
                                     <div class="testimonial-img">
-                                        <img src="{{asset('front-end-assets') }}/images/clients/c2.png" alt="image of clients person" />
+                                        <img src="assets/images/clients/c2.png" alt="image of clients person" />
                                     </div><!--/.testimonial-img-->
                                 </div><!--/.testimonial-info-->
                                 <div class="testimonial-comment">
@@ -303,7 +303,7 @@
                             <div class="testimonial-description">
                                 <div class="testimonial-info">
                                     <div class="testimonial-img">
-                                        <img src="{{asset('front-end-assets') }}/images/clients/c3.png" alt="image of clients person" />
+                                        <img src="assets/images/clients/c3.png" alt="image of clients person" />
                                     </div><!--/.testimonial-img-->
                                 </div><!--/.testimonial-info-->
                                 <div class="testimonial-comment">
@@ -332,34 +332,34 @@
                 <div class="owl-carousel owl-theme brand-item">
                     <div class="item">
                         <a href="#">
-                            <img src="{{asset('front-end-assets') }}/images/brand/br1.png" alt="brand-image" />
+                            <img src="assets/images/brand/br1.png" alt="brand-image" />
                         </a>
                     </div><!--/.item-->
                     <div class="item">
                         <a href="#">
-                            <img src="{{asset('front-end-assets') }}/images/brand/br2.png" alt="brand-image" />
+                            <img src="assets/images/brand/br2.png" alt="brand-image" />
                         </a>
                     </div><!--/.item-->
                     <div class="item">
                         <a href="#">
-                            <img src="{{asset('front-end-assets') }}/images/brand/br3.png" alt="brand-image" />
+                            <img src="assets/images/brand/br3.png" alt="brand-image" />
                         </a>
                     </div><!--/.item-->
                     <div class="item">
                         <a href="#">
-                            <img src="{{asset('front-end-assets') }}/images/brand/br4.png" alt="brand-image" />
-                        </a>
-                    </div><!--/.item-->
-
-                    <div class="item">
-                        <a href="#">
-                            <img src="{{asset('front-end-assets') }}/images/brand/br5.png" alt="brand-image" />
+                            <img src="assets/images/brand/br4.png" alt="brand-image" />
                         </a>
                     </div><!--/.item-->
 
                     <div class="item">
                         <a href="#">
-                            <img src="{{asset('front-end-assets') }}/images/brand/br6.png" alt="brand-image" />
+                            <img src="assets/images/brand/br5.png" alt="brand-image" />
+                        </a>
+                    </div><!--/.item-->
+
+                    <div class="item">
+                        <a href="#">
+                            <img src="assets/images/brand/br6.png" alt="brand-image" />
                         </a>
                     </div><!--/.item-->
                 </div><!--/.owl-carousel-->
