@@ -2,133 +2,6 @@
 @section('title')
     CarVilla
 @endsection
-
-@section('hero')
-    <div class="container">
-        <div class="welcome-hero-txt">
-            <h2>get your desired car in resonable price</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore   magna aliqua.
-            </p>
-            <button class="welcome-btn" onclick="window.location.href='#'">contact us</button>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="model-search-content">
-                    <div class="row">
-                        <div class="col-md-offset-1 col-md-2 col-sm-12">
-                            <div class="single-model-search">
-                                <h2>select year</h2>
-                                <div class="model-select-icon">
-                                    <select class="form-control">
-
-                                        <option value="default">year</option><!-- /.option-->
-
-                                        <option value="2018">2018</option><!-- /.option-->
-
-                                        <option value="2017">2017</option><!-- /.option-->
-                                        <option value="2016">2016</option><!-- /.option-->
-
-                                    </select><!-- /.select-->
-                                </div><!-- /.model-select-icon -->
-                            </div>
-                            <div class="single-model-search">
-                                <h2>body style</h2>
-                                <div class="model-select-icon">
-                                    <select class="form-control">
-
-                                        <option value="default">style</option><!-- /.option-->
-
-                                        <option value="sedan">sedan</option><!-- /.option-->
-
-                                        <option value="van">van</option><!-- /.option-->
-                                        <option value="roadster">roadster</option><!-- /.option-->
-
-                                    </select><!-- /.select-->
-                                </div><!-- /.model-select-icon -->
-                            </div>
-                        </div>
-                        <div class="col-md-offset-1 col-md-2 col-sm-12">
-                            <div class="single-model-search">
-                                <h2>select make</h2>
-                                <div class="model-select-icon">
-                                    <select class="form-control">
-
-                                        <option value="default">make</option><!-- /.option-->
-
-                                        <option value="toyota">toyota</option><!-- /.option-->
-
-                                        <option value="holden">holden</option><!-- /.option-->
-                                        <option value="maecedes-benz">maecedes-benz.</option><!-- /.option-->
-
-                                    </select><!-- /.select-->
-                                </div><!-- /.model-select-icon -->
-                            </div>
-                            <div class="single-model-search">
-                                <h2>car condition</h2>
-                                <div class="model-select-icon">
-                                    <select class="form-control">
-
-                                        <option value="default">condition</option><!-- /.option-->
-
-                                        <option value="something">something</option><!-- /.option-->
-
-                                        <option value="something">something</option><!-- /.option-->
-                                        <option value="something">something</option><!-- /.option-->
-
-                                    </select><!-- /.select-->
-                                </div><!-- /.model-select-icon -->
-                            </div>
-                        </div>
-                        <div class="col-md-offset-1 col-md-2 col-sm-12">
-                            <div class="single-model-search">
-                                <h2>select model</h2>
-                                <div class="model-select-icon">
-                                    <select class="form-control">
-
-                                        <option value="default">model</option><!-- /.option-->
-
-                                        <option value="kia-rio">kia-rio</option><!-- /.option-->
-
-                                        <option value="mitsubishi">mitsubishi</option><!-- /.option-->
-                                        <option value="ford">ford</option><!-- /.option-->
-
-                                    </select><!-- /.select-->
-                                </div><!-- /.model-select-icon -->
-                            </div>
-                            <div class="single-model-search">
-                                <h2>select price</h2>
-                                <div class="model-select-icon">
-                                    <select class="form-control">
-
-                                        <option value="default">price</option><!-- /.option-->
-
-                                        <option value="$0.00">$0.00</option><!-- /.option-->
-
-                                        <option value="$0.00">$0.00</option><!-- /.option-->
-                                        <option value="$0.00">$0.00</option><!-- /.option-->
-
-                                    </select><!-- /.select-->
-                                </div><!-- /.model-select-icon -->
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-12">
-                            <div class="single-model-search text-center">
-                                <button class="welcome-btn model-search-btn" onclick="window.location.href='#'">
-                                    search
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-@endsection
-
 @section('content')
 
     <!--service start -->
@@ -195,14 +68,14 @@
                                 </div>
                                 <div class="col-md-5 col-sm-12">
                                     <div class="new-cars-txt">
-                                        <h2><a href="#">chevrolet camaro <span> za100</span></a></h2>
+                                        <h2><a href="{{route('new-cars')}}">chevrolet camaro <span> za100</span></a></h2>
                                         <p>
                                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                         </p>
                                         <p class="new-cars-para2">
                                             Sed ut pers unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
                                         </p>
-                                        <button class="welcome-btn new-cars-btn" onclick="window.location.href='#'">
+                                        <button class="welcome-btn new-cars-btn" onclick="window.location.href='{{route("new-cars")}}'">
                                             view details
                                         </button>
                                     </div><!--/.new-cars-txt-->

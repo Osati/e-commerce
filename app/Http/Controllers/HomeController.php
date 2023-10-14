@@ -14,7 +14,7 @@ class HomeController extends Controller
         ]);
     }
     public function services(){
-        return view('front-end.service.service');
+            return view('front-end.service.service');
     }
     public function newCar(){
         return view('front-end.new-cars.new-car');

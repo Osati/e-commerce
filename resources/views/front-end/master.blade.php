@@ -58,20 +58,9 @@
 </head>
 
 <body>
-<!--[if lte IE 9]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-<![endif]-->
 
 <!--welcome-hero start -->
-<section id="home" class="welcome-hero">
-
-    <!-- top-area Start -->
-   @include('front-end.home.header')
-    <!-- top-area End -->
-
-   @yield('hero')
-
-</section><!--/.welcome-hero-->
+@include('front-end.home.header')
 <!--welcome-hero end -->
 
 @yield('content')

@@ -16,15 +16,24 @@ class Blog extends Model
         $request->validate([
             'title' => 'required | string | min:5 | max:25',
             'category_id'=> 'integer',
+            'author_name'=> 'required',
+            'description'=> 'required | min:10',
+            'image'=> 'nullable|image|mimes:jpg,png|max:1024|min:',
 
         ],
             [
                 'title.required'=>'Please Give a Title.',
                 'title.string'=>'Please Give a Char title.',
-                'title.min'=>'Please Give must be a more-then 10 Char.',
+                'title.min'=>'Please Give must be a more-then 5 Char.',
                 'title.max'=>'Please Give must be a less-then 25 Char.',
 
-                'category_id.integer'=>'Please Select Category Name.'
+                'category_id.integer'=>'Please Select Category Name.',
+                'author_name.required'=>'Please Give A Author Name.',
+                'description.required'=>'Please Give A Description.',
+                'description.min'=>'Please Give must be a more-then 10 Char.',
+                'image'=>'image type must be jpg or png',
+//              'image.min'=>'image size must be greater then 2KB',
+//              'image.max'=>'image size must be less then 10KB',
             ]
         );
 
@@ -52,7 +61,7 @@ class Blog extends Model
     }
     private static function saveImage($request){
         self::$image = $request->file('image');
-        self::$imgNewName = $request->title.'_'.rand(1000,9999).'.'.self::$image->extension();
+        self::$imgNewName = rand(1000,9999).'.'.self::$image->extension();
         self::$dir = 'back-end-assets/image/';
         self::$imgUrl=self::$dir.self::$imgNewName;
         self::$image->move(self::$dir,self::$imgNewName);
