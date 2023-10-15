@@ -1,7 +1,8 @@
+
+
 <!-- top navigation -->
-
-
-<div class="nav_menu">
+<div class="top_nav">
+    <div class="nav_menu">
         <div class="nav toggle">
             <a id="menu_toggle"><i class="fa fa-bars"></i></a>
         </div>
@@ -9,7 +10,7 @@
             <ul class=" navbar-right">
                 <li class="nav-item dropdown open" style="padding-left: 15px;">
                     <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                        <img src="{{ asset('back-end-assets')}}/images/img.jpg" alt="">John Doe
+                        <img src="{{asset('back-end-assets')}}/images/img.jpg" alt="">{{Auth::user()->name}}
                     </a>
                     <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item"  href="javascript:;"> Profile</a>
@@ -18,7 +19,13 @@
                             <span>Settings</span>
                         </a>
                         <a class="dropdown-item"  href="javascript:;">Help</a>
-                        <a class="dropdown-item"  href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                        <a class="dropdown-item"  href="#" onclick="event.preventDefault(); document.getElementById('logOutForm').submit()">
+                            <i class="fa fa-sign-out pull-right"></i>
+                            Log Out
+                        </a>
+                        <form action="{{ route('logout') }}" method="post" id="logOutForm">
+                            @csrf
+                        </form>
                     </div>
                 </li>
 
@@ -30,7 +37,7 @@
                     <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
                         <li class="nav-item">
                             <a class="dropdown-item">
-                                <span class="image"><img src="{{ asset('back-end-assets')}}/images/img.jpg" alt="Profile Image" /></span>
+                                <span class="image"><img src="{{asset('back-end-assets')}}/images/img.jpg" alt="Profile Image" /></span>
                                 <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -42,7 +49,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="dropdown-item">
-                                <span class="image"><img src="{{ asset('back-end-assets')}}/images/img.jpg" alt="Profile Image" /></span>
+                                <span class="image"><img src="{{asset('back-end-assets')}}/images/img.jpg" alt="Profile Image" /></span>
                                 <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -54,7 +61,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="dropdown-item">
-                                <span class="image"><img src="{{ asset('back-end-assets')}}/images/img.jpg" alt="Profile Image" /></span>
+                                <span class="image"><img src="{{asset('back-end-assets')}}/images/img.jpg" alt="Profile Image" /></span>
                                 <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -66,7 +73,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="dropdown-item">
-                                <span class="image"><img src="{{ asset('back-end-assets')}}/images/img.jpg" alt="Profile Image" /></span>
+                                <span class="image"><img src="{{asset('back-end-assets')}}/images/img.jpg" alt="Profile Image" /></span>
                                 <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -89,5 +96,5 @@
             </ul>
         </nav>
     </div>
-
+</div>
 <!-- /top navigation -->
