@@ -18,7 +18,7 @@ class Blog extends Model
             'category_id'=> 'integer',
             'author_name'=> 'required',
             'description'=> 'required | min:10',
-            'image'=> 'nullable|image|mimes:jpg,png|max:100|min:2',
+            'image'=> 'nullable|image|mimes:jpg,png|max:500|min:2',
 
         ],
             [
@@ -33,7 +33,7 @@ class Blog extends Model
                 'description.min'=>'Please Give must be a more-then 10 Char.',
                 'image'=>'image type must be jpg or png',
               'image.min'=>'image size must be greater then 2KB',
-              'image.max'=>'image size must be less then 20KB'
+              'image.max'=>'image size must be less then 500KB'
             ]
         );
 

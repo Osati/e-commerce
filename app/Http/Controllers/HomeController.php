@@ -17,7 +17,9 @@ class HomeController extends Controller
             return view('front-end.service.service');
     }
     public function newCar(){
-        return view('front-end.new-cars.new-car');
+        return view('front-end.new-cars.new-car',[
+            'blogs'=>Blog::where('status',1)->get(),
+        ]);
     }
     public function brands(){
         return view('front-end.brands.brand');

@@ -34,8 +34,15 @@
                     </li>
                     <li><a><i class="fa fa-windows"></i> Blog <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
-                            <li><a href="{{ route('blogs.create') }}">Add BLog</a></li>
-                            <li><a href="{{ route('blogs.index') }}">Manage BLog</a></li>
+                            <li><a href="{{ route('blogs.create') }}">Add Blog</a></li>
+                            <li><a href="{{ route('blogs.index') }}">Manage Blog</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a><i class="fa fa-windows"></i> Newcar <span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                            <li><a href="{{ route('newcars.create') }}">Add New-Car</a></li>
+                            <li><a href="{{ route('newcars.index') }}">New-Cars-details</a></li>
 
                         </ul>
                     </li>
