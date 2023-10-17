@@ -28,6 +28,9 @@
                             <li><a href="{{ route('new-cars') }}">new cars</a></li>
                             <li ><a href="{{ route('brands') }}">brands</a></li>
                             <li class="scroll"><a href="#contact">contact</a></li>
+
+                            <li ><a href="{{ route('visitor.signup') }}">Sign Up</a></li>
+                            <li class="scroll"><a href="#">SignIn</a></li>
                         </ul><!--/.nav -->
                     </div><!-- /.navbar-collapse -->
                 </div><!--/.container-->
