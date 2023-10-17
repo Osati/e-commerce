@@ -13,7 +13,9 @@ class NewcarController extends Controller
      */
     public function index()
     {
-        //
+        return view('back-end.new-cars.index',[
+            'newcars'=>Newcar::all()
+        ]);
     }
 
     /**
@@ -21,9 +23,7 @@ class NewcarController extends Controller
      */
     public function create()
     {
-        return view('back-end.new-cars.create',[
-            'categories'=>Category::all()
-        ]);
+        return view('back-end.new-cars.create');
     }
 
     /**
@@ -49,7 +49,9 @@ class NewcarController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        return view('back-end.new-cars.edit',[
+            'newcar'=>Newcar::find($id)
+        ]);
     }
 
     /**
@@ -57,7 +59,9 @@ class NewcarController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        Newcar::saveInfo($request,$id);
+        return redirect(route('newcars.index'));
+
     }
 
     /**
@@ -65,6 +69,6 @@ class NewcarController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        Newcar::delInfo($id); return back();
     }
 }

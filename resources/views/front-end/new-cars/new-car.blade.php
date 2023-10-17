@@ -13,24 +13,23 @@
             </div><!--/.section-header-->
             <div class="new-cars-content">
                 <div class="owl-carousel owl-theme" id="new-cars-carousel">
-                    @foreach($blogs as $blog)
+                    @foreach($newcars as $newcar)
                         <div class="new-cars-item">
                             <div class="single-new-cars-item">
                                 <div class="row">
-
                                     <div class="col-md-7 col-sm-12">
                                         <div class="new-cars-img">
-                                            <img src="{{ $blog->image }}" alt="image"/>
+                                            <img src="{{ $newcar->image }}" style="width: 400px" >
                                         </div><!--/.new-cars-img-->
                                     </div>
                                     <div class="col-md-5 col-sm-12">
                                         <div class="new-cars-txt">
-                                            <h2><a href="{{route('new-cars')}}">{{ $blog->title }}</a></h2>
+                                            <h2><a href="{{route('new-cars')}}">{{ $newcar->title }}</a></h2>
                                             <p class="text-danger">
-                                                {{ $blog->category->category_name }}
+                                                {{ $newcar->category_name }}
                                             </p>
                                             <p class="new-cars-para2">
-                                                {{ $blog->description }}
+                                                {{ $newcar->description }}
                                             </p>
                                             <button class="welcome-btn new-cars-btn" onclick="window.location.href='{{route("new-cars")}}'">
                                                 view details
