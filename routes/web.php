@@ -25,9 +25,13 @@ Route::get('/new/cars',[HomeController::class,'newCar'])->name('new-cars');
 Route::get('/brands',[HomeController::class,'brands'])->name('brands');
 Route::get('/feature',[HomeController::class,'featured'])->name('featured');
 
+Route::get('/visitor/login',[VisitorAuthController::class,'visitorLogin'])->name('visitor.login');
+Route::post('/visitor/login',[VisitorAuthController::class,'visitorLoginCheck'])->name('visitor.login');
 Route::get('/visitor/signup',[VisitorAuthController::class,'signupView'])->name('visitor.signup');
 Route::post('/visitor/store',[VisitorAuthController::class,'signStore'])->name('visitor.store');
+Route::post('/visitor/signin',[VisitorAuthController::class,'visitorLoginCheck'])->name('visitor.signin');
 
+Route::get('/visitor/logout',[VisitorAuthController::class,'logout'])->name('visitor.logout');
 
 
 

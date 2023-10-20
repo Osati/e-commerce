@@ -10,12 +10,13 @@ class Visitor extends Model
     use HasFactory;
     public static $visitor;
 
-    public static function saveinfo($request){
+    public static function saveUser($request){
         self::$visitor = new Visitor();
-        self::$visitor->$request->username;
+        self::$visitor->username = $request->username;
         self::$visitor->email = $request->email;
         self::$visitor->phone = $request->phone;
-        self::$visitor->password = $request->password;
+        self::$visitor->password = bcrypt($request->password);
         self::$visitor->save();
+
     }
 }

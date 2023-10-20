@@ -29,8 +29,8 @@
                     <label for="fullname">Password :</label>
                     <input type="password"  class="form-control" name="password"/>
 
-                    <label for="fullname">Confirm Password :</label>
-                    <input type="password"  class="form-control" name="confirmpassword"/>
+{{--                    <label for="fullname">Confirm Password :</label>--}}
+{{--                    <input type="password"  class="form-control" name="confirmpassword"/>--}}
 
                     <button type="submit" name="submit" class="form-control btn btn-success mt-1">Save Info</button>
                 </form>

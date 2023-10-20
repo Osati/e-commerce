@@ -29,8 +29,16 @@
                             <li ><a href="{{ route('brands') }}">brands</a></li>
                             <li class="scroll"><a href="#contact">contact</a></li>
 
-                            <li ><a href="{{ route('visitor.signup') }}">Sign Up</a></li>
-                            <li class="scroll"><a href="#">SignIn</a></li>
+                            @if(Session::get('visitorId'))
+                                <li class="nav-item"><a class="nav-link" href="{{route('visitor.signup')}}">{{ Session::get('visitorName') }}</a></li>
+
+                            <li class="nav-item"><a class="nav-link" href="{{route('visitor.logout')}}">Logout</a></li>
+
+                            @else
+                                <li class="nav-item"><a class="nav-link" href="{{route('visitor.signup')}}">sign Up</a></li>
+
+                            <li class="nav-item"><a class="nav-link" href="{{route('visitor.login')}}">Sign In</a></li>
+                            @endif
                         </ul><!--/.nav -->
                     </div><!-- /.navbar-collapse -->
                 </div><!--/.container-->
