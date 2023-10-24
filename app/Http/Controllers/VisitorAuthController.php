@@ -10,7 +10,7 @@ class VisitorAuthController extends Controller
 {
     public static $visitor;
     public function visitorLogin(){
-        return view('front-end.auth.signin');
+        return view('front-end.visitor.signin');
     }
     public function visitorLoginCheck(Request $request){
         self::$visitor = Visitor::where('email',$request->email)->first();
@@ -31,7 +31,7 @@ class VisitorAuthController extends Controller
     }
 
     public function signupView(){
-        return view('front-end.auth.signup');
+        return view('front-end.visitor.signup');
     }
     public function signStore(Request $request){
         Visitor::saveUser($request);
